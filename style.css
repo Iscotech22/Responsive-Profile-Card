@@ -23,6 +23,9 @@ h2 {
   margin: 0;
   letter-spacing: 2px;
 }
+h4{
+    margin: 5px 0;
+}
  ul li{
     list-style: none;
 }
@@ -183,9 +186,11 @@ button{
 }
 .hubbies ul {
     padding-left: 0;
+    margin: 8px 0;
 }
 .dislikes ul {
     padding-left: 0;
+    margin: 8px 0;
 }
 .socialLink ul{
     display: flex;
