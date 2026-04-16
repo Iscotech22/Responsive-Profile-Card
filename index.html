@@ -43,46 +43,52 @@
                     </ul>
                 </div>
             </div>
-            <section >
-               <div class="Habbit">
+            <div class="habit">
+                <section >
                     <div class="hubbies">
                         <h4>Hubbies</h4>
                         <ul data-testid="test-user-hobbies">
-                            <li data-testid="test-user-hobbies">🎮Gaming</li>
-                            <li data-testid="test-user-hobbies">📚Reading</li>
-                            <li data-testid="test-user-hobbies">🧑‍💻Coding</li>
+                            <li>🎮Gaming</li>
+                            <li>📚Reading</li>
+                            <li>🧑‍💻Coding</li>
                         </ul>
                     </div>
+                </section> 
+                <section>
                     <div class="dislikes">
                         <h4>Dislikes</h4>
                         <ul data-testid="test-user-dislikes">
-                            <li data-testid="test-user-dislikes">👾Bugs</li>
-                            <li data-testid="test-user-dislikes">🕛Slow Website</li>
-                            <li data-testid="test-user-dislikes">🚌Travling</li>
+                            <li>👾Bugs</li>
+                            <li>🕛Slow Website</li>
+                            <li>🚌Travling</li>
                         </ul>
                     </div>
-               </div>
+                </section>
+           </div>
+            <nav>
                 <div class="socialLink" data-testid="test-user-social-links">
                     <ul data-testid="test-user-social-links">
                         <li data-testid="test-user-social-facebook"><a href="#" target="_blank">
                             <i class="fa-brands fa-facebook"></i></a>
                         </li>
-                        <li data-testid="test-user-social-twitter"><a href="https://x.com/Iscotech22" target="_blank">
+                        <li data-testid="test-user-social-twitter"><a href="https://x.com/Iscotech22" target="_blank" rel="noopener noreferrer">
                             <i class="fa-brands fa-twitter"></i></a>
                         </li>
-                        <li data-testid="test-user-social-github"><a href="https://github.com/Iscotech22" target="_blank">
+                        <li data-testid="test-user-social-github"><a href="https://github.com/Iscotech22" target="_blank" rel="noopener noreferrer">
                             <i class="fa-brands fa-github"></i></a>
                         </li>
-                        <li data-testid="test-user-social-eamil"><a href="#" target="_blank">
+                        <li data-testid="test-user-social-email"><a href="#" target="_blank" rel="noopener noreferrer">
                             <i class="fa-solid fa-envelope"></i></a>
                         </li>
-                        <li data-testid="test-user-social-linkedin"><a href="#" target="_blank">
+                        <li data-testid="test-user-social-linkedin"><a href="#" target="_blank" rel="noopener noreferrer">
                             <i class="fa-brands fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
-            </section> 
+            </nav>
+            <p data-testid="test-user-time" id="current-time" class="time">Loading</p>
         </article>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

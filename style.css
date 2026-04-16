@@ -16,6 +16,7 @@
     --slate-900: hsl(218, 44%, 22%);;
 
 }
+
 h2 {
   font-size: var(--fs-title);
   font-weight: var(--fw-bold);
@@ -77,7 +78,7 @@ strong{
 .profile-card{
     max-width: 580px;
     margin: 20px;
-    padding: 30px;
+    padding: 20px;
     position: relative;
     background: white;
     border-radius: 20px;
@@ -133,6 +134,12 @@ button{
 }
 .interact-btn{
     padding-left: 0;
+    padding-right: 20px;
+    margin: 10px auto;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center
 }
 .button ul{
     display: flex;
@@ -167,11 +174,12 @@ button{
 .fa-plus{
     color: green;
 }
-.Habbit{
+.habit{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-top: 0;
 }
 .hubbies ul {
     padding-left: 0;
@@ -187,9 +195,14 @@ button{
     padding-left: 20px;
     padding-right: 20px;
 }
-section{
-    margin-top: 2px;
-    
+
+.time {
+  font-size: 12px;
+  color: #6b7280; /* soft gray */
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-variant-numeric: tabular-nums; /* numbers align nicely */
 }
 
 /*Curved shadow */
