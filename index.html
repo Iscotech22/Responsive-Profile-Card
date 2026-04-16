@@ -31,12 +31,12 @@
                 <div class="button">
                     <ul class="interact-btn">
                         <li>
-                            <a href="#" class="message-btn">
+                            <a href="#" class="message-btn" target="_blank">
                                 <i class="fa-solid fa-message"></i>Message
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="connect-btn">
+                            <a href="#" class="connect-btn" target="_blank">
                                 <i class="fa-solid fa-plus"></i>Connect
                             </a>
                         </li>
@@ -47,28 +47,38 @@
                <div class="Habbit">
                     <div class="hubbies">
                         <h4>Hubbies</h4>
-                        <ul>
-                            <li>🎮Gaming</li>
-                            <li>📚Reading</li>
-                            <li>🧑‍💻Coding</li>
+                        <ul data-testid="test-user-hobbies">
+                            <li data-testid="test-user-hobbies">🎮Gaming</li>
+                            <li data-testid="test-user-hobbies">📚Reading</li>
+                            <li data-testid="test-user-hobbies">🧑‍💻Coding</li>
                         </ul>
                     </div>
                     <div class="dislikes">
                         <h4>Dislikes</h4>
-                        <ul>
-                            <li>👾Bugs</li>
-                            <li>🕛Slow Website</li>
-                            <li>🚌Travling</li>
+                        <ul data-testid="test-user-dislikes">
+                            <li data-testid="test-user-dislikes">👾Bugs</li>
+                            <li data-testid="test-user-dislikes">🕛Slow Website</li>
+                            <li data-testid="test-user-dislikes">🚌Travling</li>
                         </ul>
                     </div>
                </div>
-                <div class="socialLink">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <div class="socialLink" data-testid="test-user-social-links">
+                    <ul data-testid="test-user-social-links">
+                        <li data-testid="test-user-social-facebook"><a href="#" target="_blank">
+                            <i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li data-testid="test-user-social-twitter"><a href="#" target="_blank">
+                            <i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li data-testid="test-user-social-github"><a href="#" target="_blank">
+                            <i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li data-testid="test-user-social-eamil"><a href="#" target="_blank">
+                            <i class="fa-solid fa-envelope"></i></a>
+                        </li>
+                        <li data-testid="test-user-social-linkedin"><a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                        </li>
                     </ul>
                 </div>
             </section> 
