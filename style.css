@@ -1,27 +1,45 @@
 /* Styling section */
 :root {
-  --fs-title: 18px;
-  --fs-body: 14px;
-  --fs-small: 12px;
+  --bg: #f6f8fb;
+  --card: #ffffff;
 
-  --fw-bold: 600;
-  --fw-medium: 500;
-  --fw-regular: 400;
-  --font-family: 'Inter', sans-serif;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
 
-  /* color palette */
-    --color-white: hsl(0, 0%, 100%);
-    --slate-300: hsl(212, 45%, 89%); 
-    --slate-500: hsl(216, 15%, 48%);
-    --slate-900: hsl(218, 44%, 22%);;
+  --primary: #2563eb;
+  --primary-light: #eff6ff;
 
+  --success: #16a34a;
+  --danger: #dc2626;
+
+  --border: #e5e7eb;
+
+  --radius: 16px;
 }
+<<<<<<< HEAD
 
 h2 {
   font-size: var(--fs-title);
   font-weight: var(--fw-bold);
   margin: 0;
   letter-spacing: 2px;
+=======
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+strong{
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.bio-text p{
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+>>>>>>> duplicate
 }
 h4{
     margin: 5px 0;
@@ -50,12 +68,10 @@ body {
 }
     
 img{
-    width: 160px;
-    height: 160px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-    position: relative;
-    left: 20%;
-    
+    object-fit: cover;
 }
 figure{
     margin: 0;
@@ -73,20 +89,29 @@ strong{
     color: grey;
 }
 .bio-text{
-    font-family: var(--font-family);
-    font-size: var(--fs-small);
-    color: grey;
-    text-justify: center;
+    max-width: 400px;
 }
+
 .profile-card{
-    max-width: 580px;
+    max-width: 900px;
+    width: 100%;
     margin: 20px;
     padding: 20px;
+<<<<<<< HEAD
     position: relative;
     background: white;
     border-radius: 20px;
     border: 1px solid;
     box-shadow: 5px 5px 5px 5px  grey;
+=======
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column; /* mobile default */
+    gap: 20px;
+>>>>>>> duplicate
 }
 
 .profile-avatar{
@@ -95,12 +120,36 @@ strong{
     justify-content: center;
     justify-items: center;
 }
-.Skills{
+.profile-image{
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: column; /* mobile */
     align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+.Skills span{
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500;
+}
 
+/* HTML */
+.Skills span:nth-child(1){
+    background: #e34f261a;
+    color: #e34f26;
+}
+
+/* CSS */
+.Skills span:nth-child(2){
+    background: #1572b61a;
+    color: #1572b6;
+}
+
+/* JS */
+.Skills span:nth-child(3){
+    background: #f7df1e33;
+    color: #b59f00;
 }
 span:nth-child(1){
     padding: 6px 12px;
@@ -146,22 +195,39 @@ button{
 }
 .button ul{
     display: flex;
-    gap: 20px;
-    padding-left: 20px;
+    gap: 12px;
+    justify-content: center;
+    padding: 0;
 }
-.button ul li:nth-child(1){
-    padding:6px 12px;
-    border: 1px solid #1572b6;
+
+.button ul li{
     border-radius: 10px;
-    background-color: #1572b6;
-    color: #fff;
+    transition: all 0.25s ease;
 }
-.button ul li:nth-child(2){
-    padding:6px 12px;
+
+/* Message (Primary) */
+.button ul li:first-child{
+    background: var(--primary);
+    color: white;
+    padding: 5px 12px;
+}
+
+.button ul li:first-child:hover{
+    padding: 5px 12px;
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* Connect (Outline) */
+.button ul li:last-child{
     border: 1px solid green;
-    border-radius: 10px;
-    background-color: #fff;
-    color: green;
+    background: white;
+    padding: 5px 12px;
+}
+
+.button ul li:last-child:hover{
+    background: var(--primary-light);
+    border-color: var(--primary);
 }
 .connect-btn {
   color: green;
@@ -184,6 +250,7 @@ button{
     gap: 40px;
     margin-top: 0;
 }
+<<<<<<< HEAD
 .hubbies ul {
     padding-left: 0;
     margin: 8px 0;
@@ -191,15 +258,48 @@ button{
 .dislikes ul {
     padding-left: 0;
     margin: 8px 0;
+=======
+.habit{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.hubbies, .dislikes{
+    flex: 1;
+    min-width: 140px;
+    background: #f9fafb;
+    padding: 12px;
+    border-radius: 12px;
+>>>>>>> duplicate
 }
 .socialLink ul{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    gap: 12px;
+    padding: 0;
 }
+
+.socialLink a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+    background: #f3f4f6;
+
+    transition: all 0.25s ease;
+}
+
+.socialLink a:hover{
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+<<<<<<< HEAD
 
 .time {
   font-size: 12px;
@@ -222,4 +322,67 @@ button{
   border-radius: 50%;
   filter: blur(10px);
   z-index: -1;
+=======
+section{
+    margin-top: 2px;
+}
+a, button{
+  transition: all 0.2s ease;
+}
+
+a:hover, button:hover{
+  cursor: pointer;
+}
+
+@media (min-width: 768px){
+
+  .profile-card{
+    padding: 20px;
+  }
+
+  .profile-image{
+    flex-direction: row; /* 🔥 SIDE BY SIDE */
+    align-items: center;
+    text-align: left;
+    gap: 25px;
+  }
+
+  .profile-avatar{
+    flex-shrink: 0;
+  }
+
+  .bio-text{
+    text-align: left;
+  }
+
+  .button ul{
+    justify-content: flex-start;
+  }
+
+  .habit{
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .socialLink ul{
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1024px){
+
+  .profile-card{
+    max-width: 900px;
+    padding: 30px;
+  }
+
+  img{
+    width: 140px;
+    height: 140px;
+  }
+
+  .bio-text{
+    max-width: 500px;
+  }
+>>>>>>> duplicate
 }
