@@ -54,6 +54,13 @@ img{
     height: 110px;
     border-radius: 50%;
     object-fit: cover;
+    position: relative;
+    left: 20%;
+}
+.choose-file{
+    position: relative;
+    left: 20%;
+    margin-top: 10px;
 }
 figure{
     margin: 0;
@@ -61,10 +68,12 @@ figure{
 figcaption{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
     margin-top: 10px;
+    padding:0;
 }
+
 strong{
     font-family: var(--font-family);
     font-size: 13px;
@@ -265,17 +274,54 @@ button{
   margin-bottom: 5px;
   font-variant-numeric: tabular-nums; /* numbers align nicely */
 }
+@media (min-width: 1024px){
 
-/*Curved shadow */
-.profile-card::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 10%;
-  width: 80%;
-  height: 20px;
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 50%;
-  filter: blur(10px);
-  z-index: -1;
+  .profile-card{
+    max-width: 900px;
+    padding: 40px;
+  }
+
+  img{
+    width: 140px;
+    height: 140px;
+  }
+
+  .bio-text{
+    max-width: 500px;
+  }
+}
+@media (min-width: 768px){
+
+  .profile-card{
+    padding: 30px;
+  }
+
+  .profile-image{
+    flex-direction: row; 
+    align-items: center;
+    text-align: left;
+    gap: 25px;
+  }
+
+  .profile-avatar{
+    flex-shrink: 0;
+  }
+
+  .bio-text{
+    text-align: left;
+  }
+
+  .button ul{
+    justify-content: flex-start;
+  }
+
+  .habit{
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .socialLink ul{
+    justify-content: center;
+  }
 }
